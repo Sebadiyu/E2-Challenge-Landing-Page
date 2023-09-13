@@ -1,10 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
 
 :root {
+  /* colors */
   --mandarine: rgb(218, 108, 11);
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
+
+  /* font-size */
+  --small: 14px;
+  --medium: 18px;
+  --large: 24px;
+  --xlarge: 32px;
+  --xxlarge: 48px;
+
+  /* fonts */
+  --font-light: (200);
+  --font-regular: (400);
+  --font-bold: (600);
+  --font-black: (800);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +27,6 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .Navbar {
@@ -24,6 +38,7 @@
   background-color: var(--mandarine);
   height: 60px;
   padding: 0 1.5rem;
+  font-weight: var(--font-bold);
 }
 
 .logo {
@@ -48,26 +63,61 @@ i {
   padding: 5px;
 }
 
-/* .Navbar {
-  color: white;
-  background-color: rgb(218, 108, 11);
-  padding: 5px;
+main {
   display: flex;
-  justify-content: space-between;
-}
-.Navbar-logo {
-  height: 40px;
-}
-.Nav-options {
-  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.options {
-  padding: 10px;
-  list-style: none;
+.hero-container {
+  border: 1px solid black;
+  padding: 80px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slogan {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+  padding: 40px;
+}
+.title-hero {
+  font-size: var(--xxlarge);
+  font-weight: var(--font-black);
 }
 
-.options-a {
-  text-decoration: none;
-  color: white;
-} */
+.slogan-hero {
+}
+
+.btn {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  max-width: 300px;
+}
+
+.btn-hero1 {
+  background-color: #3f3f3f;
+  color: var(--white);
+  padding: 0px 20px;
+  border-radius: 20px;
+  font-size: x-small;
+  cursor: pointer;
+}
+
+.btn-hero2 {
+  background-color: none;
+  color: var(--black);
+  padding: 0 20px;
+  border-radius: 20px;
+  border-style: 5px;
+  cursor: pointer;
+  font-size: x-small;
+}
+.img-hero {
+}
