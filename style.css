@@ -2,9 +2,11 @@
 
 :root {
   /* colors */
-  --mandarine: rgb(218, 108, 11);
-  --black: rgb(0, 0, 0);
+  --mandarine: rgb(130, 166, 197);
+  --black-primary: rgb(0, 0, 0);
+  --black-secondary: rgb(19, 20, 21);
   --white: rgb(255, 255, 255);
+  --grey: rgb(63, 63, 63);
 
   /* font-size */
   --small: 14px;
@@ -64,6 +66,8 @@ i {
 }
 
 main {
+  background-color: var(--black-secondary);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,15 +75,14 @@ main {
 }
 
 .hero-container {
-  border: 1px solid black;
   padding: 80px;
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 25px;
 }
 .slogan {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -91,9 +94,6 @@ main {
   font-weight: var(--font-black);
 }
 
-.slogan-hero {
-}
-
 .btn {
   display: flex;
   justify-content: start;
@@ -102,7 +102,8 @@ main {
 }
 
 .btn-hero1 {
-  background-color: #3f3f3f;
+  border: none;
+  background-color: var(--grey);
   color: var(--white);
   padding: 0px 20px;
   border-radius: 20px;
@@ -110,14 +111,26 @@ main {
   cursor: pointer;
 }
 
-.btn-hero2 {
+.More-info {
+  border: 1px solid var(--grey);
   background-color: none;
-  color: var(--black);
+  color: var(--white);
   padding: 0 20px;
   border-radius: 20px;
   border-style: 5px;
-  cursor: pointer;
   font-size: x-small;
 }
-.img-hero {
+
+.info-container {
+  padding: 80px;
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container p {
+  text-align: center;
+  font-size: var(--xlarge);
+  font-weight: var(--font-black);
 }
