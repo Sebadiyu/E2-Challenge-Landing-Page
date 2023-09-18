@@ -2,11 +2,15 @@
 
 :root {
   /* colors */
-  --mandarine: rgb(130, 166, 197);
-  --black-primary: rgb(0, 0, 0);
-  --black-secondary: rgb(19, 20, 21);
+
+  --black1: rgb(0, 0, 0);
+  --black2: #27191c;
   --white: rgb(255, 255, 255);
+  --white2: #e0e4ce;
   --grey: rgb(63, 63, 63);
+  --green1: #2d3839;
+  --green2: #114d4d;
+  --green3: #6e9987;
 
   /* font-size */
   --small: 14px;
@@ -37,7 +41,7 @@
   align-items: center;
   width: 100%;
   padding: 8px;
-  background-color: var(--mandarine);
+  background-color: var(--green2);
   height: 60px;
   padding: 0 1.5rem;
   font-weight: var(--font-bold);
@@ -58,7 +62,7 @@
 }
 
 li a {
-  color: var(--white);
+  color: var(--white2);
 }
 
 i {
@@ -66,8 +70,8 @@ i {
 }
 
 main {
-  background-color: var(--black-secondary);
-  color: white;
+  background-color: var(--green1);
+  color: var(--white2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +90,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 45%;
+  width: 50%;
   padding: 40px;
 }
 .title-hero {
@@ -94,35 +98,40 @@ main {
   font-weight: var(--font-black);
 }
 
-.btn {
-  display: flex;
-  justify-content: start;
-  gap: 30px;
-  max-width: 300px;
-}
-
-.btn-hero1 {
-  border: none;
-  background-color: var(--grey);
-  color: var(--white);
-  padding: 0px 20px;
-  border-radius: 20px;
-  font-size: x-small;
-  cursor: pointer;
-}
-
 .More-info {
-  border: 1px solid var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.More-info1 {
+  border: none;
+  background-color: var(--green2);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: var(--small);
+  text-align: center;
+  border: 3px solid var(--green2);
+}
+
+.More-info2 {
+  border: 3px solid var(--green2);
   background-color: none;
   color: var(--white);
-  padding: 0 20px;
+  padding: 5px 30px;
   border-radius: 20px;
-  border-style: 5px;
-  font-size: x-small;
+  border-style: 3px;
+  font-size: var(--small);
+  text-align: center;
+}
+.img-hero img {
+  width: 450px;
 }
 
 .info-container {
-  padding: 80px;
+  padding: 70px;
   display: flex;
   width: 1000px;
   justify-content: center;
@@ -131,6 +140,7 @@ main {
 
 .info-container p {
   text-align: center;
-  font-size: var(--xlarge);
+  text-align: center;
+  font-size: var(--large);
   font-weight: var(--font-black);
 }
