@@ -34,6 +34,9 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+a:visited {
+  color: var(--white);
+}
 
 .Navbar {
   display: flex;
@@ -143,4 +146,94 @@ main {
   text-align: center;
   font-size: var(--large);
   font-weight: var(--font-black);
+}
+
+.categories-container,
+.recetas-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.categories-h2,
+.recetas-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--green3);
+  border-radius: 16px;
+}
+.categories-links,
+.recetas-destacadas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.categories {
+  background-color: var(--green2);
+  padding: 10px;
+  border-radius: 8px;
+}
+.categories img {
+  width: 350px;
+  border-radius: 4px;
+}
+.categories-h3 h3 {
+  text-align: center;
+  font-size: var(--large);
+  font-weight: var(--font-black);
+}
+
+.recetas-destacadas-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--green2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.recetas-destacadas-card img {
+  width: 300px;
+  border-radius: 4px;
+}
+
+.info-recetas-h3 h3 {
+  display: flex;
+  justify-content: start;
+  font-size: var(--large);
+  font-weight: var(--font-black);
+}
+
+.info-recetas-card {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-recetas-card img {
+  width: 50px;
+  gap: 50p;
+  padding: 0;
+  border-radius: 5px;
+}
+.info-recetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.info-recetas p {
+  font-size: var(--medium);
 }
