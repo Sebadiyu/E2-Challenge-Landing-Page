@@ -26,10 +26,16 @@
   }
 
   .navbar {
-    width: 100%;
-  }
-  .footer {
     max-width: 992px;
     width: 100%;
   }
+
+  .categories-links {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
 }

@@ -37,19 +37,28 @@
 a:visited {
   color: var(--white);
 }
-
+body {
+  background-color: #2d3839;
+  width: 100%;
+}
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
   padding: 8px;
   background: linear-gradient(to right, var(--green2), var(--green1));
   height: 60px;
   font-weight: var(--font-bold);
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
+header label i {
+  font-size: 50px;
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -81,6 +90,8 @@ main {
   align-items: center;
   padding-top: 60px;
 }
+
+/* HERO */
 
 .hero-container {
   padding: 40px 80px;
@@ -138,10 +149,14 @@ main {
   border-radius: 10px;
 }
 
+/* /HERO */
+
+/* ABOUT */
+
 .info-container {
   padding: 50px;
   display: flex;
-  width: 1000px;
+  width: 80%;
   justify-content: center;
   align-items: center;
 }
@@ -153,13 +168,15 @@ main {
   font-weight: var(--font-black);
 }
 
+/* /ABOUT */
+
 .categories-container,
 .recetas-container,
 .whyus-container {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  max-width: 1000px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -171,9 +188,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 1000px;
   background-color: var(--green3);
-  border-radius: 16px;
+  border-radius: 20px;
 }
 .categories-links,
 .recetas-destacadas {
@@ -183,7 +200,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .categories {
@@ -201,6 +218,10 @@ main {
   font-size: var(--large);
   font-weight: var(--font-black);
 }
+
+/* /CATEGORIAS */
+
+/* RECETAS DESTACADAS */
 
 .recetas-destacadas-card {
   display: flex;
@@ -246,12 +267,18 @@ main {
   font-size: var(--medium);
 }
 
+/* /RECETAS DESTACADAS */
+
+/* SECCION BENEFIT */
+
 .whyus-benefit {
   display: flex;
   display: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 40px;
+  gap: 20px;
 }
 
 .whyus-benefit-card {
@@ -261,9 +288,8 @@ main {
   justify-content: center;
   background-color: var(--green2);
   border-radius: 25px;
-  gap: 10px;
   padding: 10px;
-  width: 30%;
+  width: 250px;
   height: 450px;
 }
 .whyus-h3 {
@@ -295,6 +321,9 @@ main {
   border-radius: 20px;
 }
 
+/* /SECCION BENEFIT */
+/* FOOTER */
+
 footer {
   background-color: var(--green2);
   color: var(--white2);
@@ -302,15 +331,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 100vw;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  justify-content: space-around;
+  max-width: 1000px;
+  width: 80%;
+  justify-content: space-between;
   gap: 10px;
   padding: 20px;
   align-items: center;
@@ -318,20 +348,22 @@ footer {
 
 .footer-contact {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 10px;
   font-size: var(--medium);
 }
 
-.footer img {
-  width: 100px;
+iframe {
+  width: 250px;
+  height: 300px;
 }
 .footer-redes {
   display: flex;
   flex-wrap: wrap;
   width: 250px;
   padding: 10px;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -344,3 +376,5 @@ footer {
   font-size: var(--large);
   font-weight: var(--font-black);
 }
+
+/* /FOOTER */
